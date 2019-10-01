@@ -1,0 +1,170 @@
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ code makefile
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+make: ***  Aucune règle pour fabriquer la cible « testarg.c », nécessaire pour « compile ». Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+./testarg  6 toto salut 2016 ?!:\;
+argc = 6
+./testarg
+6
+toto
+salut
+2016
+?!:;
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ man atof
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+testarg.c: In function ‘main’:
+testarg.c:9:12: warning: unused variable ‘pi_val’ [-Wunused-variable]
+     double pi_val = atof(pi);
+            ^~~~~~
+./testarg  6 toto salut 2016 ?!:\;
+argc = 6
+./testarg
+6
+toto
+salut
+2016
+?!:;
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+testarg.c: In function ‘main’:
+testarg.c:8:13: error: expected identifier or ‘(’ before ‘=’ token
+     for(int = 0; i<argc; i++)
+             ^
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+./testarg  6 toto salut 2016 ?!:\;
+somme des valeurs en argument 6.000000
+argc = 6
+./testarg
+6
+toto
+salut
+2016
+?!:;
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+./testarg 0.4 blbllcc 0.34.2
+somme des valeurs en argument 0.740000
+argc = 4
+./testarg
+0.4
+blbllcc
+0.34.2
+//6 toto salut 2016 ?!:\;
+/bin/sh: 1: //6: not found
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur 127
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ man isdigit
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+./testarg 0.4 blbllcc 0.34.2
+Result when numeric character is passed: 2048somme des valeurs en argument 0.740000
+argc = 4
+./testarg
+0.4
+blbllcc
+0.34.2
+//6 toto salut 2016 ?!:\;
+/bin/sh: 1: //6: not found
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur 127
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+testarg.c: In function ‘test_float’:
+testarg.c:6:23: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+     for(int i = 0; i< strlen(chaine); i++)
+                       ^~~~~~
+testarg.c:6:23: warning: incompatible implicit declaration of built-in function ‘strlen’
+testarg.c:6:23: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+./testarg 0.4 blbllcc 0.34.2
+somme des valeurs en argument 0.740000
+//6 toto salut 2016 ?!:\;
+/bin/sh: 1: //6: not found
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur 127
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+testarg.c: In function ‘test_float’:
+testarg.c:6:23: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+     for(int i = 0; i< strlen(chaine); i++)
+                       ^~~~~~
+testarg.c:6:23: warning: incompatible implicit declaration of built-in function ‘strlen’
+testarg.c:6:23: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+./testarg 0.4 blbllcc 0.34.2
+somme des valeurs en argument 0.740000
+//6 toto salut 2016 ?!:\;
+/bin/sh: 1: //6: not found
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur 127
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+./testarg 0.4 blbllcc 0.34.2
+somme des valeurs en argument 0.740000
+//6 toto salut 2016 ?!:\;
+/bin/sh: 1: //6: not found
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur 127
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+./testarg 0.4 blbllcc 0.34.2
+somme des valeurs en argument 0.740000
+/*6 toto salut 2016 ?!:\;*/
+/bin/sh: 1: /*6: not found
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur 127
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+./testarg 0.4 blbllcc 0.34.2
+somme des valeurs en argument 0.740000
+/*6 toto salut 2016 ?!:\;*/
+/bin/sh: 1: /*6: not found
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur 127
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+makefile:2: *** missing separator. Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+makefile:2: *** missing separator. Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ clean
+bash: clean : commande introuvable
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+makefile:2: *** missing separator. Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make clean
+makefile:2: *** missing separator. Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+makefile:2: *** missing separator. Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ clean
+bash: clean : commande introuvable
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+makefile:2: *** missing separator. Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+testarg.c: In function ‘main’:
+testarg.c:38:49: error: ‘v1’ undeclared (first use in this function)
+     printf("somme des valeurs en argument %f\n",v1 +v2 +v3);
+                                                 ^~
+testarg.c:38:49: note: each undeclared identifier is reported only once for each function it appears in
+testarg.c:38:53: error: ‘v2’ undeclared (first use in this function); did you mean ‘v1’?
+     printf("somme des valeurs en argument %f\n",v1 +v2 +v3);
+                                                     ^~
+                                                     v1
+testarg.c:38:57: error: ‘v3’ undeclared (first use in this function); did you mean ‘v2’?
+     printf("somme des valeurs en argument %f\n",v1 +v2 +v3);
+                                                         ^~
+                                                         v2
+makefile:9 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ make
+gcc -Wall -o testarg testarg.c
+./testarg 6a84 blbllcc 0.34.2
+./testarg 0.345 234
+c'est un nombre
+./testarg 023. 345
+c'est un nombre
+./testarg -0.32 234
+c'est un nombre
+./testarg -0.32.34 234
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2$ 

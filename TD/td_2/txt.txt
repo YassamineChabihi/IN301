@@ -1,0 +1,10 @@
+run: compile
+	./testarg 0.4 blbllcc 0.34.2
+	 toto salut 2016 ?!:\;
+
+compile: testarg.c	
+	gcc -Wall -o testarg testarg.c
+
+clean: 
+	rm testarg
+	ls -l

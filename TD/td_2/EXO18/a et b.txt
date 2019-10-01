@@ -1,0 +1,128 @@
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+make: ***  Aucune règle pour fabriquer la cible « testarg.c », nécessaire pour « compile ». Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+make: ***  Aucune règle pour fabriquer la cible « testarg.c », nécessaire pour « compile ». Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+make: ***  Aucune règle pour fabriquer la cible « testarg.c », nécessaire pour « compile ». Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ ./exo18
+bash: ./exo18: Aucun fichier ou dossier de ce type
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ gcc -Wall -o exo18 exo18.c
+exo18.c: In function ‘rec_length’:
+exo18.c:13:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+make: ***  Aucune règle pour fabriquer la cible « testarg.c », nécessaire pour « compile ». Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ clean
+bash: clean : commande introuvable
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ rm exo18
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+make: ***  Aucune règle pour fabriquer la cible « testarg.c », nécessaire pour « compile ». Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ gcc -Wall -o exo18 exo18.c
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ ./exo18
+Erreur de segmentation
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ ./exo18
+Erreur de segmentation
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ exo18
+bash: exo18 : commande introuvable
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ ./exo18
+Erreur de segmentation
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+make: ***  Aucune règle pour fabriquer la cible « testarg.c », nécessaire pour « compile ». Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ makefile
+bash: makefile : commande introuvable
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+make: ***  Aucune règle pour fabriquer la cible « testarg.c », nécessaire pour « compile ». Arrêt.
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+gcc -Wall -o exo18 exo18.c
+./exo18 chaine_test
+TAaille du premier argument par methode iterative 11TAaille du premier argument par methode recursive 11user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+gcc -Wall -o exo18 exo18.c
+./exo18 chaine_test
+TAaille du premier argument par methode iterative 11 
+TAaille du premier argument par methode recursive 11 
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+gcc -Wall -o exo18 exo18.c
+exo18.c: In function ‘rec_length’:
+exo18.c:12:25: warning: multi-character character constant [-Wmultichar]
+     return(chaine[0] == '/0') ? 0 : 1 + rec_length(chaine +1);
+                         ^~~~
+./exo18 chaine_test
+TAaille du premier argument par methode iterative 11 
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur de segmentation
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+gcc -Wall -o exo18 exo18.c
+exo18.c: In function ‘rec_length’:
+exo18.c:12:26: warning: multi-character character constant [-Wmultichar]
+     return (chaine[0] == '/0') ? 0 : 1 + rec_length(chaine +1);
+                          ^~~~
+./exo18 chaine_test
+TAaille du premier argument par methode iterative 11 
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur de segmentation
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ clean
+bash: clean : commande introuvable
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ rm exo18
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+gcc -Wall -o exo18 exo18.c
+exo18.c: In function ‘rec_length’:
+exo18.c:12:26: warning: multi-character character constant [-Wmultichar]
+     return (chaine[0] == '/0') ? 0 : 1 + rec_length(chaine +1);
+                          ^~~~
+./exo18 chaine_test
+TAaille du premier argument par methode iterative 11 
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur de segmentation
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+gcc -Wall -o exo18 exo18.c
+exo18.c: In function ‘rec_length’:
+exo18.c:12:26: warning: multi-character character constant [-Wmultichar]
+     return (chaine[0] == '/0') ? 0 : 1 + rec_length(chaine +1);
+                          ^~~~
+./exo18 chaine_test
+TAaille du premier argument par methode iterative 11 
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur de segmentation
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ make
+gcc -Wall -o exo18 exo18.c
+./exo18 chaine_test
+TAaille du premier argument par methode iterative 11 
+TAaille du premier argument par methode recursive 11 
+user@debian:~/Bureau/CY/IN301/IN301/.git/TD/td_2/EXO18$ 
+
+
+------------------------------------------------------------------------------
+run: compile
+	./exo18 chaine_test
+
+compile: exo18.c	
+	gcc -Wall -o exo18 exo18.c
+
+clean: 
+	rm exo18
+	ls -l
+
+---------------------------------------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int length(char * chaine){
+    int i;
+    for(i=0; chaine[i] != '\0'; i++){}
+    return i;
+}
+
+int rec_length(char * chaine){
+    return (chaine[0] == '\0') ? 0 : 1 + rec_length(chaine +1);
+    //if(chaine[0] == '\0')   return 0;
+    //return 1 + rec_length(chaine +1);
+}
+
+int main( int argc, char** argv){
+    printf("TAaille du premier argument par methode iterative %d \n", length(argv[1]));
+    printf("TAaille du premier argument par methode recursive %d \n", rec_length(argv[1]));
+    
+    return 0;   
+}
