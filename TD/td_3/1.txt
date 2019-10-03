@@ -1,0 +1,624 @@
+user@debian:~/IN301$ ls
+CM  README.md  TD
+user@debian:~/IN301$ cd TD/
+user@debian:~/IN301/TD$ ls
+IN301_poly_td_2019-2020.pdf  td_1   td_11  td_2  td_4  td_6  td_8
+td_0                         td_10  td_12  td_3  td_5  td_7  td_9
+user@debian:~/IN301/TD$ td_3
+bash: td_3 : commande introuvable
+user@debian:~/IN301/TD$ cd td_3
+user@debian:~/IN301/TD/td_3$ ls
+user@debian:~/IN301/TD/td_3$ code EXO11.c
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+EXO11.c: In function ‘main’:
+EXO11.c:8:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+     printf("char : %d",sizeof(char) );
+                    ~^
+                    %ld
+./EXO11 
+char : 1user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+./EXO11 
+char : 1user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+./EXO11 
+char : 1 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+./EXO11 
+char : 1 
+char : 4 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+EXO11.c: In function ‘main’:
+EXO11.c:18:35: error: invalid application of ‘sizeof’ to incomplete type ‘int[]’
+     printf("char : %ld \n",sizeof(int[]) );
+                                   ^~~
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+EXO11.c: In function ‘main’:
+EXO11.c:18:35: error: invalid application of ‘sizeof’ to incomplete type ‘int[]’
+     printf("char : %ld \n",sizeof(int[]) );
+                                   ^~~
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+./EXO11 
+char : 1 
+char : 4 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 40 
+char : 21 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+./EXO11 
+char : 1 
+char : 4 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 40 
+char : 21 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+EXO11.c: In function ‘main’:
+EXO11.c:22:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘float *’ [-Wformat=]
+     printf("char : %d \n",tab);
+                    ~^     ~~~
+./EXO11 
+char : 1 
+char : 4 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 40 
+char : 21 
+char : 2116216512 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+EXO11.c: In function ‘main’:
+EXO11.c:22:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘float *’ [-Wformat=]
+     printf("char : %d \n",tab);
+                    ~^     ~~~
+EXO11.c:23:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+     printf("char : %d \n",tab[0]);
+                    ~^     ~~~~~~
+                    %f
+EXO11.c:24:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘float *’ [-Wformat=]
+     printf("char : %d \n",tab);
+                    ~^     ~~~
+EXO11.c:25:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘float *’ [-Wformat=]
+     printf("char : %d \n",tab);
+                    ~^     ~~~
+EXO11.c:26:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘float *’ [-Wformat=]
+     printf("char : %d \n",tab);
+                    ~^     ~~~
+./EXO11 
+char : 1 
+char : 4 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 40 
+char : 21 
+char : 206912816 
+char : 389034000 
+char : 206912816 
+char : 206912816 
+char : 206912816 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO11 EXO11.c
+EXO11.c: In function ‘main’:
+EXO11.c:22:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘float *’ [-Wformat=]
+     printf("tab : %d \n",tab);
+                   ~^     ~~~
+EXO11.c:23:23: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+     printf("tab[0] : %d \n",tab[0]);
+                      ~^     ~~~~~~
+                      %f
+EXO11.c:24:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘float *’ [-Wformat=]
+     printf("&tab[0] : %d \n",&tab[0]);
+                       ~^     ~~~~~~~
+EXO11.c:25:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘float *’ [-Wformat=]
+     printf("*&tab : %d \n",*&tab);
+                     ~^     ~
+EXO11.c:26:25: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+     printf("*&tab[0] : %d \n",*&tab[0]);
+                        ~^     ~~~~~~~~
+                        %f
+./EXO11 
+char : 1 
+char : 4 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 8 
+char : 40 
+char : 21 
+tab : -691718112 
+tab[0] : -1430314992 
+&tab[0] : -691718112 
+*&tab : -691718112 
+*&tab[0] : -1430314992 
+user@debian:~/IN301/TD/td_3$ code EXO12.c
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO12 EXO12.c
+EXO12.c: In function ‘main’:
+EXO12.c:10:18: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int (*)[3]’ [-Wformat=]
+     printf("T : %d \n",T );
+                 ~^     ~
+./EXO12 
+T : 709006848 
+T[0][0] : 194 
+T[0][1] : 0 
+T[0][2] : 709006911 
+T[1][0] : 32767 
+T[1][1] : 709006910 
+T[6][2] : 709007168 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO12 EXO12.c
+EXO12.c: In function ‘main’:
+EXO12.c:10:18: warning: unknown conversion type character ‘&’ in format [-Wformat=]
+     printf("T : %&d \n",T );
+                  ^
+EXO12.c:10:12: warning: too many arguments for format [-Wformat-extra-args]
+     printf("T : %&d \n",T );
+            ^~~~~~~~~~~~
+./EXO12 
+T : %&d 
+T[0][0] : 194 
+T[0][1] : 0 
+T[0][2] : 2095496959 
+T[1][0] : 32767 
+T[1][1] : 2095496958 
+T[6][2] : 2095497216 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO12 EXO12.c
+EXO12.c: In function ‘main’:
+EXO12.c:10:18: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int (*)[3]’ [-Wformat=]
+     printf("T : %d \n",T );
+                 ~^     ~
+./EXO12 
+T : 1112791152 
+T[0][0] : 194 
+T[0][1] : 0 
+T[0][2] : 1112791215 
+T[1][0] : 32764 
+T[1][1] : 1112791214 
+T[6][2] : 1112791472 
+user@debian:~/IN301/TD/td_3$ code EXO13.c
+user@debian:~/IN301/TD/td_3$ code EXO14.c
+user@debian:~/IN301/TD/td_3$ code EXO15.c
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘init_tab’:
+EXO15.c:11:9: error: ‘i’ undeclared (first use in this function)
+     for(i=0; i<10; i++){
+         ^
+EXO15.c:11:9: note: each undeclared identifier is reported only once for each function it appears in
+EXO15.c: In function ‘affiche’:
+EXO15.c:19:9: error: ‘i’ undeclared (first use in this function)
+     for(i=0; i<10; i++){
+         ^
+EXO15.c:20:30: error: ‘t’ undeclared (first use in this function)
+         printf(" i : %d \n ",t[i]);
+                              ^
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c:9:10: error: initializer element is not constant
+ int *t = malloc(10*sizeof(int));
+          ^~~~~~
+EXO15.c: In function ‘init_tab’:
+EXO15.c:13:9: error: ‘i’ undeclared (first use in this function)
+     for(i=0; i<10; i++){
+         ^
+EXO15.c:13:9: note: each undeclared identifier is reported only once for each function it appears in
+EXO15.c: In function ‘affiche’:
+EXO15.c:22:9: error: ‘i’ undeclared (first use in this function)
+     for(i=0; i<10; i++){
+         ^
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c:9:10: error: initializer element is not constant
+ int *t = malloc(10*sizeof(int));
+          ^~~~~~
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:32:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+ i : 3 
+  i : 6 
+  i : 17 
+  i : 15 
+  i : 13 
+  i : 15 
+  i : 6 
+  i : 12 
+  i : 9 
+  i : 1 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+i : 3 
+ i : 6 
+ i : 17 
+ i : 15 
+ i : 13 
+ i : 15 
+ i : 6 
+ i : 12 
+ i : 9 
+ i : 1 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+ i : 3 
+  i : 6 
+  i : 17 
+  i : 15 
+  i : 13 
+  i : 15 
+  i : 6 
+  i : 12 
+  i : 9 
+  i : 1 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+ i : 3 
+  i : 6 
+  i : 17 
+  i : 15 
+  i : 13 
+  i : 15 
+  i : 6 
+  i : 12 
+  i : 9 
+  i : 1 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+ i : 3 
+  i : 6 
+  i : 17 
+  i : 15 
+  i : 13 
+  i : 15 
+  i : 6 
+  i : 12 
+  i : 9 
+  i : 1 
+  i : 1041 
+  i : 0 
+  i : 543760416 
+  i : 875896890 
+  i : 909719605 
+  i : 540356662 
+  i : 10 
+  i : 0 
+  i : 0 
+  i : 0 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+i : 3 
+ i : 6 
+ i : 17 
+ i : 15 
+ i : 13 
+ i : 15 
+ i : 6 
+ i : 12 
+ i : 9 
+ i : 1 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+i : 3 
+ i : 6 
+ i : 17 
+ i : 15 
+ i : 13 
+ i : 15 
+ i : 6 
+ i : 12 
+ i : 9 
+ i : 1 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+i : 3 
+ i : 6 
+ i : 17 
+ i : 15 
+ i : 13 
+ i : 15 
+ i : 6 
+ i : 12 
+ i : 9 
+ i : 1 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+i : 3 
+ i : 6 
+ i : 17 
+ i : 15 
+ i : 13 
+ i : 15 
+ i : 6 
+ i : 12 
+ i : 9 
+ i : 1 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:28:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time());
+           ^~~~
+./EXO15 
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur de segmentation
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:28:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time());
+           ^~~~
+./EXO15 
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur de segmentation
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:28:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time()20);
+           ^~~~
+EXO15.c:28:17: error: expected ‘)’ before numeric constant
+     srand(time()20);
+                 ^~
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:28:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time(20));
+           ^~~~
+./EXO15 
+makefile:2 : la recette pour la cible « run » a échouée
+make: *** [run] Erreur de segmentation
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:28:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time(NULL));
+           ^~~~
+./EXO15 
+i : 13 
+ i : 7 
+ i : 2 
+ i : 14 
+ i : 9 
+ i : 13 
+ i : 17 
+ i : 1 
+ i : 8 
+ i : 0 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:28:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time(NULL));
+           ^~~~
+./EXO15 
+i : 16 
+ i : 0 
+ i : 5 
+ i : 9 
+ i : 8 
+ i : 12 
+ i : 10 
+ i : 13 
+ i : 8 
+ i : 15 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:28:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time(NULL));
+           ^~~~
+./EXO15 
+i : 7 
+ i : 6 
+ i : 7 
+ i : 0 
+ i : 12 
+ i : 2 
+ i : 18 
+ i : 1 
+ i : 2 
+ i : 6 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:29:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time(NULL));
+           ^~~~
+./EXO15 
+i : 4 
+ 
+ i : 12 
+ 
+ i : 2 
+ 
+ i : 6 
+ 
+ i : 4 
+ 
+ i : 19 
+ 
+ i : 10 
+ 
+ i : 11 
+ 
+ i : 8 
+ 
+ i : 1 
+ 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:28:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time(NULL));
+           ^~~~
+./EXO15 
+i : 4 
+ i : 9 
+ i : 9 
+ i : 10 
+ i : 0 
+ i : 3 
+ i : 5 
+ i : 5 
+ i : 13 
+ i : 10 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:30:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time(NULL));
+           ^~~~
+./EXO15 
+i : 13 
+ i : 10 
+ i : 6 
+ i : 7 
+ i : 19 
+ i : 14 
+ i : 3 
+ i : 15 
+ i : 2 
+ i : 19 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘main’:
+EXO15.c:30:11: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+     srand(time(NULL));
+           ^~~~
+./EXO15 
+i : 18 
+ i : 4 
+ i : 5 
+ i : 4 
+ i : 13 
+ i : 10 
+ i : 9 
+ i : 1 
+ i : 9 
+ i : 6 
+ user@debian:~/IN301/TD/td_3$ man time
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+./EXO15 
+i : 0 
+ i : 6 
+ i : 19 
+ i : 0 
+ i : 12 
+ i : 1 
+ i : 15 
+ i : 16 
+ i : 13 
+ i : 14 
+ user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘produit’:
+EXO15.c:31:3: error: ‘t’ undeclared (first use in this function)
+   t[i] = * ;
+   ^
+EXO15.c:31:3: note: each undeclared identifier is reported only once for each function it appears in
+EXO15.c:31:12: error: expected expression before ‘;’ token
+   t[i] = * ;
+            ^
+EXO15.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘produit’:
+EXO15.c:33:17: error: ‘t’ undeclared (first use in this function)
+   somme=somme * t[i];
+                 ^
+EXO15.c:33:17: note: each undeclared identifier is reported only once for each function it appears in
+EXO15.c:30:9: warning: unused variable ‘i’ [-Wunused-variable]
+     int i=0 , somme=0;
+         ^
+EXO15.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘produit’:
+EXO15.c:33:17: error: ‘t’ undeclared (first use in this function)
+   somme=somme * t[i];
+                 ^
+EXO15.c:33:17: note: each undeclared identifier is reported only once for each function it appears in
+EXO15.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ make
+gcc -Wall -o EXO15 EXO15.c
+EXO15.c: In function ‘produit’:
+EXO15.c:32:17: error: ‘t’ undeclared (first use in this function)
+   somme=somme * t[i];
+                 ^
+EXO15.c:32:17: note: each undeclared identifier is reported only once for each function it appears in
+EXO15.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+makefile:5 : la recette pour la cible « compile » a échouée
+make: *** [compile] Erreur 1
+user@debian:~/IN301/TD/td_3$ 
