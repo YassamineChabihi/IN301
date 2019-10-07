@@ -15,9 +15,11 @@ void sup_tabint (TABINT T);
 void aff_tabint (TABINT T);
 
 // Utilisation ech_tabint avec i < à T.N-1
+void scan_ech_tabint (TABINT A, int fin);
 void ech_tabint (TABINT T, int i);
 void fusionner (TABINT T, int deb, int mil, int fin);
 
 int verif_si_tableau_croissant (TABINT T); 
+
 
 #endif
