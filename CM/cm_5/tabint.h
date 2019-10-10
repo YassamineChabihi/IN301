@@ -7,6 +7,8 @@
 #ifndef _TABINT_H
 #define _TABINT_H
 
+int comp;
+int ech;
 
 struct tabint {
     int N;  // Taille du tableau
@@ -23,7 +25,7 @@ void aff_tabint (TABINT T);
 // Utilisation ech_tabint avec i < à T.N-1
 void scan_ech_tabint (TABINT A, int fin);
 void ech_tabint (TABINT T, int i);
-void fusionner (TABINT T, int deb, int mil, int fin);
+void fusionnper (TABINT T, int deb, int mil, int fin);
 
 int verif_si_tableau_croissant (TABINT T); 
 

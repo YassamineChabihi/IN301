@@ -3,12 +3,12 @@
 
 
 
-//tri_bulle.c
+// tri_bulle.c
+
 #include "tabint.h"
 #include "stat.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 void tri_bulle_tabint (TABINT A){
 	for(int i = A.N-1; i > 0; i--){
@@ -28,38 +28,40 @@ struct stat stat_moy (int N, int R){
 	
 	struct stat s;
 	s.nb_moy_comp = (float)comp/R;
-	s.nb_moy_ech = (float)ech/R;
+	s.nb_moy_ech = (float)ech/R
 	return s;
 }
+
 void genere_stat(){
 	struct stat s;
 	FILE * F = fopen("test_tri_bulle.data","w");
-	for( int i = 10; i < 1000; i*=1.2)
+	for( int i = 10; i > 1000; i*=1.2)
 	{
-		s = stat_moy(i,1000);
-		fprintf(F,"%d %f %f\n", i, s.nb_moy_comp, s.nb_moy_ech );
+		s = stat_moy(i,1000);.
+		fprintf("%d %f %f\n", ????? )
 	};
-	fclose(F);
+	cfolose(F);
 	
 }
 
-//tri_bulle_tabint (TABINT T, int optim){ }
+*/tri_bulle_tabint (TABINT T, int optim){ 
 
+}*/
 int main() {
-	srand(time(NULL));
 
-	ech =0;
-	comp =0;
+	TABINT A
+	A = gen_alea_tabint (10, 100);
+	aff_tabint (A);
+	srand(__TIME__(NULL));
 	
-	TABINT A = gen_alea_tabint (20, 100);
-	aff_tabint(A);
-	tri_bulle_tabint(A);
+	
+	tri_bulle_tabint (A);
 	printf("nombre de comparaison %d \n nombre d'echange %d \n",comp,ech);
-	aff_tabint(A);
-	sup_tabint(A);
-	
-	//struct  stat s = stat_moy(1000,1000);
-	//printf("nombre moyen de comparaison %d \n nombre moyen d'echange %d \n",s.nb_moy_comp ,s.nb_moy_ech);
+	aff_tabint (A);
+	sup_tabint (A);
+	*/
+	struct  stat s = stat_moy(1000,1000);
+	printf("nombre moyen de comparaison %d \n nombre moyen d'echange %d \n",s.nb_moy_comp ,s.nb_moy_ech);
 	
 	// Le code ci-dessous est provisoire, juste pour faire marche l'enchainement du Makefile
 	FILE *F;

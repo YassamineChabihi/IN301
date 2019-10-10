@@ -3,14 +3,17 @@
 
 
 
-//stat.h
+// stat.h
 #ifndef _STAT_H
 #define _STAT_H
 
 int comp;
 int ech;
 
-
+struct stat {
+float nb_moy_comp;
+float nb_moy_ech;
+}; 
 struct stat {
 	int N;
 	double nb_moy_comp;

@@ -3,42 +3,31 @@
 
 
 
-#makefile
+# Makefile
 visu: stat.pdf
 	evince stat.pdf &
 
 
-stat.pdf: tri_bulle tri_fusion stat.gplt test_tri_bulle.data test_tri_fusion.data
+stat.pdf: tri_bulle stat.gplt test_tri_bulle.data
 	gnuplot stat.gplt
-
-test_tri.data: tri_bulle tri_fusion
-	./tri_bulle
-	./tri_fusion
-
-test_tri_fusion.data: tri_fusion
-	./tri_fusion
-
+# E
 test_tri_bulle.data: tri_bulle
-	./tri_bulle	
+	./tri_bulle
 
-# Le tri à fusion	
-
-tri_fusion: tri_fusion.o tabint.o
-	gcc -Wall -o tri_fusion tri_fusion.o tabint.o
-
-tri_fusion.o: tri_fusion.c tabint.h stat.h
-	gcc -Wall -c tri_fusion.c
 
 # Le tri à bulles
-
+# Edition  de liens
 tri_bulle: tri_bulle.o tabint.o
 	gcc -Wall -o tri_bulle tri_bulle.o tabint.o
 
+# compilation de tri_bulle.c
 tri_bulle.o: tri_bulle.c tabint.h stat.h
 	gcc -Wall -c tri_bulle.c
 
 
 # La bibliothèque de manipulation de tableaux
+
+# compilation de tabint.c
 tabint.o: tabint.c tabint.h
 	gcc -Wall -c tabint.c
 
