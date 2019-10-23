@@ -1,0 +1,110 @@
+
+
+
+
+//liste.c
+#include "liste.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void affiche_iter(struct liste *l){
+    while(l != NULL)
+    {
+        printf("%d ", l->val);
+        l = l->suiv;
+    }
+    printf("\n");
+}
+
+void affiche_rec(struct liste *l){
+    if (l != NULL)
+    {
+        printf("%d ", l->val);
+        affiche_rec(l->suiv);   
+    }
+    else
+    {
+        printf("\n");
+    }
+}
+
+int nb_elem_iter(struct liste *l){
+    int taille =0;
+    if (l != NULL)
+    {
+        taille++;
+        l = l->suiv;  
+    }
+    return taille;
+}
+
+int nb_elem_rec(struct liste *l){
+    return (l) ? 1+ nb_elem_rec(l->suiv) : 0;
+
+    /*
+    if (l != NULL)
+    {
+        return 1 + nb_elem_rec(l->suiv);
+    }
+    else
+    {
+        return 0;
+    }
+    */
+}
+
+int est_present_iter(struct liste *l, int val){
+    while(l){
+        if (l->val == val)return 1;
+        l = l->suiv;
+    }
+    return 0;
+}
+
+int est_present_rec(struct liste *l, int val){
+    return (l) ? (l->val == val) 
+    || est_present_rec(l->suiv,val): 0;
+    /*
+    if(l){
+        if (l->val == val)return 1;
+        return est_present_rec(l->suiv,val);
+        
+    }
+    else
+    {
+        return 0;
+    }
+    */
+}
+
+struct liste *inserer_deb (struct liste *l, int val){
+    struct liste *new = malloc(sizeof(struct liste));
+    new->val = val;
+    new->suiv = l;
+    return new;
+    
+}
+/*
+void inserer_deb2 (???? l, int val){
+
+}
+*/
+struct liste *supprimer_deb(struct liste *l){
+    if(l == NULL){
+    printf("suprission d'element dans une liste vide \n");
+    exit(1);
+    }
+    else
+    {
+        struct liste *deb = l;
+        l = l->suiv;
+        free(deb);
+        return l;
+    }
+    
+}
+/*
+
+void supprimer_deb2 (???? l){}
+*/
