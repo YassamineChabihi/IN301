@@ -1,8 +1,8 @@
 run: compile
-	./test
+	gdb ./test
 
 compile: test.o liste.o
-	gcc -o test test.o liste.o
+	gcc -Wall -g -o test test.o liste.o
 
 test.o: test.c
 	gcc  -c test.c -Wall
