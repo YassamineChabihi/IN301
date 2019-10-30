@@ -14,6 +14,9 @@ int main( int argc, char** argv){
     int T[10];
     a = 7;
     T[0] = 12;
+    printf ("a: %d \nT: %d\n", a, T[0]);
     plusun(a,T);
+    printf ("a: %d \nT: %d\n", a, T[0]);
 
+    return 0;
 }

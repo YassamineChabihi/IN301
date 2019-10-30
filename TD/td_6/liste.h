@@ -49,7 +49,7 @@ struct liste *inserer_trie_rec (struct liste *l, int val);
 
 // Exercice 30
 // a
-//struct liste *retourner (struct liste *l);
+struct liste *retourner (struct liste *l);
 
 // b
 //struct liste *concat (struct liste *l1, struct liste *l2);

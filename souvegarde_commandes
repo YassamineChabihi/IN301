@@ -1,0 +1,1000 @@
+  684  ls > /write_to_me/null
+  685  mkdir '' 2> mkdir_log.txt
+  686  echo Written to a new file > data.txt
+  687  echo Appended to an existing file's contents >> data.txt
+  688  hi
+  689  hi
+  690  hi
+  691  echo Appended to an existing file's contents >> data.txt
+  692  echo Appended to an existing files contents >> data.txt
+  693  find '' 2> stderr_log.txt
+  694  wc '' 2>> stderr_log.txt
+  695  find /var lib | grep deb
+  696  wc /etc/magic | tee magic_count.txt
+  697  ls ~ | grep *tar | tr e E >> ls_log.txt
+  698  man tee | less
+  699  su
+  700  cp /etc/hosts /etc/hosts.old
+  701  sudo cp /etc/hosts /etc/hosts.old
+  702  sudo -H kate /etc/hosts
+  703  sudo -H gedit /etc/hosts
+  704  clear
+  705  sudo nano /etc/hosts
+  706  man open
+  707  cd Bureau/
+  708  ls
+  709  cd S4\ INFO/
+  710  ls
+  711  cd système\ d\'exploitation\ IN405/
+  712  ls
+  713  cd navalmap/
+  714  ls
+  715  geany fichier1.c 
+  716  ls
+  717  touch fichier1.txt
+  718  ls
+  719  rm fichier1.c
+  720  ls
+  721  geany fichier1.txt 
+  722  touch fichier2.txt
+  723  geany fichier2.txt 
+  724  touch serveur.c
+  725  geany serveur.c 
+  726  man open
+  727  man 2 open
+  728  man 2 read
+  729  man 2 strchar
+  730  man strchr
+  731  man 2 open
+  732  man strtok
+  733  gcc serveur.c
+  734  .\a.out 
+  735  .\a.out
+  736  gcc serveur.c
+  737  .\a.out
+  738  ls
+  739  cd ..
+  740  ls
+  741  tree navalmap
+  742  man tree
+  743  man stdout
+  744  man open
+  745  man O_RDONLY
+  746  man O_RDWR
+  747  cd ..
+  748  ls
+  749  cd Conception\ et\ Programmation\ Orientée-Objet/
+  750  bleuj
+  751  jbleu
+  752  bluej
+  753  cat testfile.txt
+  754  thoch testfile.txt
+  755  thouch testfile.txt
+  756  touch testfile.txt
+  757  cat testfile.txt
+  758  ./testing
+  759  ./iseek
+  760  touch start.txt
+  761  touch end.txt
+  762  ;/Iseek
+  763  ./Iseek
+  764  gcc -o Iseek Iseek.c
+  765  ./Iseek &
+  766  gcc -o lseek lseek.c
+  767  ./nomfile &
+  768  ./lseek &
+  769  vi foo.c
+  770  man lseek
+  771  gcc -o foo foo.c
+  772  ls
+  773  ls -al
+  774  gcc -o foo foo.c
+  775  ./foo &
+  776  ./foo 
+  777  ls
+  778  gcc -o foo foo.c
+  779  ./foo 
+  780  ls
+  781  gcc -o foo foo.c
+  782  ./foo 
+  783  clean
+  784  clear
+  785  ls
+  786  ls -l
+  787  gcc -o testProgram testProgram.c
+  788  ./testProgram testProgram.c
+  789  ./testProgram testfile.sh
+  790  touch testfile.sh
+  791  ./testProgram testfile.sh
+  792  gcc -o testProgram testProgram.c
+  793  ls -l
+  794  ./testProgram /home/stargazer
+  795  ./testProgram /home/user/Bureau/stat/
+  796  cd
+  797  sudo gedit /etc/hosts
+  798  vi /etc/hosts
+  799  su
+  800  vi /etc/hosts
+  801  su
+  802  vi myfile.txt
+  803  ls
+  804  ls -l
+  805  gcc -o foo foo.c
+  806  ./foo 
+  807  gcc -o foo foo.c
+  808  ./foo 
+  809  gcc -o foo foo.c
+  810  ./foo 
+  811  gcc -o foo foo.c
+  812  ./foo 
+  813  ls -l
+  814  gcc -o stat stat.c
+  815  ./stat
+  816  gcc -o foo foo.c
+  817  ./foo 
+  818  ls -l
+  819  stat sometext.txt
+  820  ls -l
+  821  $ ./testProgram testfile.sh
+  822  ./testProgram testProgram.c
+  823  ./testProgram /home/user/Bureau/fstat/codewiki/
+  824  gcc -o close close.c
+  825  ./close
+  826  gcc -o close close.c
+  827  ./close
+  828  gcc -o open open.c
+  829  ./open
+  830  gcc -o open open.c
+  831  ./open
+  832  gcc -o close close.c
+  833  ./close
+  834  gcc -o close close.c
+  835  ./close
+  836  gcc -o close close.c
+  837  ./close
+  838  gcc -o close close.c
+  839  ./close
+  840  gcc -o close read.c
+  841  gcc -o read read.c
+  842  ./read
+  843  gcc -o read read.c
+  844  ./read
+  845  gcc -o read read.c
+  846  ./read
+  847  ls -l
+  848  gcc -o write write.c
+  849  ./write
+  850  gcc -o I_O I_O.c
+  851  ./I_O
+  852  gcc -o I_O I_O.c
+  853  ./I_O
+  854  gcc -o I_O I_O.c
+  855  ./I_O &
+  856  ./I_O 
+  857  ./I_O
+  858  gcc -o I_O I_O.c
+  859  ./I_O
+  860  gcc -o argc argc.c
+  861  ./argc
+  862  ./argc yassamine chabihi
+  863  gcc -o argv argv.c
+  864  ./argv
+  865  ./argv yassamine chabihi
+  866  gcc -o main main.c
+  867  ./main
+  868  gcc -o main main.c
+  869  ./main
+  870  gcc -o main main.c
+  871  ./main
+  872  gcc -o main main.c
+  873  ./main
+  874  gcc -o main main.c
+  875  ./main
+  876  gcc -o main main.c
+  877  ./main
+  878  gcc -o main main.c
+  879  ./main
+  880  gcc -o main main.c
+  881  ./main
+  882  gcc -o main main.c
+  883  ./main
+  884  gcc -o main main.c
+  885  ./main
+  886  gcc -o main main.c
+  887  ./main
+  888  gcc -o main main.c
+  889  ./main
+  890  gcc -o main main.c
+  891  ./main
+  892  gcc -o main main.c
+  893  ./main
+  894  gcc -o foo foo.c
+  895  ./foo
+  896  gcc -o foo foo.c
+  897  ./foo
+  898  gcc -o myfork myfork.c
+  899  ./myfork
+  900  gcc -o foo foo.c -lpthread 
+  901  ./foo
+  902  gcc -o myfork myfork.c
+  903  ./myfork
+  904  gcc -o myfork myfork.c
+  905  ./myfork
+  906  ls
+  907  ps -aux | grep myfork
+  908  man stat
+  909  LANG=C man 2 stat
+  910  gcc -o stat stat.c
+  911  ./stat
+  912  gcc -o lseek lseek.c
+  913  ./lseek
+  914  gcc -o foo foo.c
+  915  ./foo
+  916  gcc -o foo foo.c
+  917  ./foo
+  918  dbg foo
+  919  gdb foo
+  920  gcc -g -o foo foo.c
+  921  gdb foo
+  922  gcc -g -o foo foo.c
+  923  gdb foo
+  924  next
+  925  gcc -g -o foo foo.c
+  926  gdb foo
+  927  gcc -g -o foo foo.c
+  928  ./foo
+  929  gdb foo
+  930  gcc -g -o foo foo.c
+  931  ./foo
+  932  gdb foo
+  933  gcc -g -o foo foo.c
+  934  ./foo
+  935  gdb ./foo
+  936  gcc -g -o threads threads.c
+  937  gdb ./threads
+  938  ./threads
+  939  gcc -g -o threads threads.c
+  940  ./threads
+  941  gcc -g -o threads threads.c
+  942  clang threads.c
+  943  code clang threads.c
+  944  ./threads
+  945  gcc -g -o threads threads.c
+  946  ./threads
+  947  gcc -g -o threads threads.c
+  948  clang threads.c
+  949  ./a.out
+  950  ./threads
+  951  gcc -g -o threads threads.c
+  952  ./threads
+  953  gcc -g -o threads threads.c
+  954  ./threads
+  955  dgb ./threads
+  956  dbg ./threads
+  957  gdb ./threads
+  958  gcc -g -o threads threads.c
+  959  gdb ./threads
+  960  gcc -g -o threads threads.c
+  961  ./threads
+  962  gcc -g -o threads threads.c
+  963  ./threads
+  964  gcc -g -o threads threads.c
+  965  ./threads
+  966  gcc -g -o threads threads.c
+  967  ./threads
+  968  gcc -g -o threads threads.c
+  969  ./threads
+  970  gcc -g -o threads threads.c
+  971  ./threads
+  972  gcc -g -o kill kill.c
+  973  ./kill
+  974  gcc -g -o kill kill.c
+  975  ./kill
+  976  gcc -g -o kill kill.c
+  977  ./kill
+  978  kill -STOP 23119
+  979  kill -CONT 23119
+  980  gcc -g -o kill kill.c
+  981  ./kill
+  982  kill -TERM 23263
+  983  kill -KILL 23263
+  984  killall ./kill
+  985  killall -9 ./kill
+  986  gcc -g -o kill kill.c
+  987  ./kill
+  988  gcc -g -o kill kill.c
+  989  ./kill
+  990  gcc -g -o code-cours code-cours.c
+  991  ./code-cours
+  992  gcc -g -o wait wait.c
+  993  ./wait
+  994  gcc -g -o locks locks.c
+  995  ./locks
+  996  gcc -g -o locks locks.c
+  997  ./locks
+  998  gcc -g -o locks locks.c
+  999  time ./locks
+ 1000  gcc -g -o locks locks.c
+ 1001  ./locks
+ 1002  gcc -g -o locks locks.c
+ 1003  ./locks
+ 1004  gcc -g -o locks locks.c
+ 1005  ./locks
+ 1006  gcc -g -o locks locks.c
+ 1007  ./locks
+ 1008  gcc -g -o locks locks.c
+ 1009  ./locks
+ 1010  gcc -g -o locks locks.c
+ 1011  ./locks
+ 1012  gcc -g -o locks locks.c
+ 1013  ./locks
+ 1014  gcc -g -o locks locks.c
+ 1015  ./locks
+ 1016  gcc -g -o locks locks.c
+ 1017  ./locks
+ 1018  gcc -g -o locks locks.c
+ 1019  ./locks
+ 1020  make
+ 1021  make clean
+ 1022  make
+ 1023  ./runtime_librarytest
+ 1024  LD_LIBRARY_PATH="/home/user/Bureau/C Programming Language/libraries;
+ 1025  LD_LIBRARY_PATH="/home/user/Bureau/C Programming Language/libraries;LD_LIBRARY_PATH
+ 1026  LD_LIBRARY_PATH="/home/user/Bureau/C Programming Language/libraries;
+ 1027  LD_LIBRARY_PATH="/home/user/Bureau/C Programming Language/libraries;LD_LIBRARY_PATH" ./runtime_librarytest "Today is NOTthat day"
+ 1028  LD_LIBRARY_PATH="/home/user/Bureau/C Programming Language/libraries;
+ 1029  LD_LIBRARY_PATH="/home/user/Bureau/C Programming Language/libraries;LD_LIBRARY_PATH" ./runtime_librarytest "Today is NOT that day"
+ 1030  ld --verbose | grep SEARCH_DIR | tr -s ' ;' \\0
+ 1031  make librarytest
+ 1032  make libmycode.so
+ 1033  make clean
+ 1034  make
+ 1035  ls
+ 1036  ls -l
+ 1037  ls -lrt
+ 1038  gcc -o libmycode libmycode.c
+ 1039  ./libmycode
+ 1040  gcc -o wait wait.c
+ 1041  ./wait
+ 1042  gcc -o foo foo.c
+ 1043  ./foo
+ 1044  ./ gdb
+ 1045  ./foo gdb
+ 1046  gdb ./foo
+ 1047  bluej
+ 1048  java -cp Echecs
+ 1049  bluej
+ 1050  eclipse
+ 1051  bluej
+ 1052  bluej
+ 1053  ls
+ 1054  ls -lrt
+ 1055  make
+ 1056  make main
+ 1057  make clean
+ 1058  make main
+ 1059  make clean
+ 1060  make main
+ 1061  cd ..
+ 1062  cd YASSAMINE_CHABIHI/
+ 1063  ls
+ 1064  cd ..
+ 1065  cd CHABIHI_YASSAMINE/
+ 1066  ls
+ 1067  make
+ 1068  cd ..
+ 1069  ls 
+ 1070  cd projet (copie 1)/
+ 1071  cd projet_copie_1/
+ 1072  make
+ 1073  make clean
+ 1074  make main
+ 1075  make clean
+ 1076  make main
+ 1077  make clean
+ 1078  make main
+ 1079  make clean
+ 1080  make main
+ 1081  make clean
+ 1082  make afficher.o
+ 1083  make clean
+ 1084  make afficher.o
+ 1085  make clean
+ 1086  make afficher.o
+ 1087  make main
+ 1088  make
+ 1089  make main
+ 1090  make
+ 1091  make clan
+ 1092  make clean 
+ 1093  make
+ 1094  make clean 
+ 1095  make ar
+ 1096  ls -lrt
+ 1097  make clean 
+ 1098  make tar
+ 1099  mv navalmap.tar ..
+ 1100  cd ..
+ 1101  mkdir test
+ 1102  mv navalmap.tar  test
+ 1103  cd test
+ 1104  ls
+ 1105  tar cvf navalmap.tar 
+ 1106  tar xvf navalmap.tar 
+ 1107  ls 
+ 1108  rm * .tar
+ 1109  rm -f * .tar
+ 1110  ls
+ 1111  cd ..
+ 1112  cd projet_copie_1/
+ 1113  ls
+ 1114  make clean
+ 1115  ls
+ 1116  make clean
+ 1117  ls
+ 1118  make tar
+ 1119  ls -lrt
+ 1120  rm navalmap.ar 
+ 1121  make main
+ 1122  make
+ 1123  make main
+ 1124  make
+ 1125  make main
+ 1126  make
+ 1127  run
+ 1128  make
+ 1129  make clean
+ 1130  make
+ 1131  make clean
+ 1132  make jeu
+ 1133  make
+ 1134  vi host
+ 1135  vi hosts
+ 1136  sudo vi /etc/hosts
+ 1137  gpg2 --symmetric message.txt
+ 1138  gpg2 --symmetric hosts
+ 1139  sudo gpg2 --symmetric hosts
+ 1140  sudo vi /etc/hosts
+ 1141  vim -x hosts
+ 1142  sudo vi /etc/hosts
+ 1143  sudo apt-get remove --purge chromium-browser
+ 1144  sudo apt purge chromium-browser
+ 1145  sudo apt-get remove --purge chromium-browser
+ 1146  sudo vi /etc/hosts
+ 1147  sudo apt-get purge chromium-browser
+ 1148  sudo apt-get remove --purge chromium-browser
+ 1149  sudo apt-get remove --purge chromium
+ 1150  sudo apt-get purge chromium
+ 1151  sudo apt-get remove --purge chromium
+ 1152  sudo apt-get --purge remove firefox
+ 1153  sudo apt-get autoremove firefox --purge
+ 1154  sudo apt-get remove firefox
+ 1155  sudo apt remove firefox
+ 1156  sudo rm -fr /opt/firefox
+ 1157  sudo mv /usr/lib/firefox/firefox_backup /usr/lib/firefox/firefox
+ 1158  sudo apt-get remove firefox
+ 1159  sudo apt-get autoremove firefox --purge
+ 1160  cd user
+ 1161  cd usr
+ 1162  cd /usr
+ 1163  cd Lib
+ 1164  cd lib
+ 1165  rm -r firefox-esr
+ 1166  sudo rm -r /firefox-esr/
+ 1167  sudo rm -r firefox-esr
+ 1168  sudo rm -r firefox-bin
+ 1169  sudo rm -r firefox-esr
+ 1170  sudo apt-get --purge remove firefox
+ 1171  sudo apt-get --purge remove firefox-esr
+ 1172  sudo dpkg -r google-chrome-stable
+ 1173  sudo apt-get --purge remove mozilla
+ 1174  cd /usr
+ 1175  cd lib
+ 1176  sudo apt-get --purge remove mozilla
+ 1177  sudo vi /etc/hosts
+ 1178  ma
+ 1179  man
+ 1180  code makefile
+ 1181  make
+ 1182  man atof
+ 1183  make
+ 1184  man isdigit
+ 1185  make
+ 1186  clean
+ 1187  make
+ 1188  make clean
+ 1189  make
+ 1190  clean
+ 1191  make
+ 1192  ./exo18
+ 1193  gcc -Wall -o exo18 exo18.c
+ 1194  make
+ 1195  clean
+ 1196  rm exo18
+ 1197  make
+ 1198  gcc -Wall -o exo18 exo18.c
+ 1199  ./exo18
+ 1200  exo18
+ 1201  ./exo18
+ 1202  make
+ 1203  makefile
+ 1204  make
+ 1205  clean
+ 1206  rm exo18
+ 1207  make
+ 1208  man strcmp
+ 1209  make
+ 1210  rm exo18
+ 1211  make
+ 1212  git version
+ 1213  sudo apt install git-all
+ 1214  git version
+ 1215  git clone https://github.com/YassamineChabihi/IN301/
+ 1216  ls
+ 1217  git clone https://github.com/YassamineChabihi/IN301/
+ 1218  ls
+ 1219  cd IN301/
+ 1220  mkdir td0
+ 1221  cd td0/
+ 1222  touch essai
+ 1223  git add essai
+ 1224  git commit essai
+ 1225  git commit -a
+ 1226  git commit essai
+ 1227  git add essai
+ 1228  git clone https://github.com/YassamineChabihi/IN301/
+ 1229  ls
+ 1230  cd ..
+ 1231  git clone https://github.com/YassamineChabihi/IN301/
+ 1232  ./sudoku
+ 1233  make
+ 1234  ./sudoku
+ 1235  make ./sudoku
+ 1236  ls
+ 1237  mkdir td0
+ 1238  cd IN301/
+ 1239  mkdir td0
+ 1240  cd td0/
+ 1241  touch essai
+ 1242  git add essai
+ 1243  git commit essai
+ 1244  git push
+ 1245  cd ..
+ 1246  mkdir cm_10
+ 1247  mkdir cm_11
+ 1248  mkdir cm_12
+ 1249  mkdir TD
+ 1250  mkdir CM
+ 1251  git push
+ 1252  ls
+ 1253  cd TD
+ 1254  ls
+ 1255  cd td_0
+ 1256  ls
+ 1257  git add mes_nombres_tries 
+ 1258  git add mes_nombres_uniq 
+ 1259  git add monfichier 
+ 1260  git add alea.c
+ 1261  git add terminal1.txt 
+ 1262  git add terminal2.txt 
+ 1263  git add terminal.txt 
+ 1264  git add nombres_tries.data 
+ 1265  git add mes_nombres 
+ 1266  git commit mes_nombres_tries 
+ 1267  git commit mes_nombres_uniq 
+ 1268  git push
+ 1269  cd
+ 1270  cd IN301/
+ 1271  git commit -a
+ 1272  git add --all
+ 1273  git commit -a
+ 1274  git push
+ 1275  git status
+ 1276  code
+ 1277  makefile
+ 1278  make
+ 1279  sudo apt-get install geany-plugin*
+ 1280  sudo apt-get install geany-plugin-addons geany-plugin-miniscript geany-plugin-autoclose geany-plugin-multiterm geany-plugin-automark geany-plugin-numberedbookmarks geany-plugin-codenav geany-plugin-overview geany-plugin-commander geany-plugin-pairtaghighlighter geany-plugin-ctags geany-plugin-pg geany-plugin-debugger geany-plugin-pohelper geany-plugin-defineformat geany-plugin-prettyprinter geany-plugin-devhelp geany-plugin-prj geany-plugin-doc geany-plugin-projectorganizer geany-plugin-extrasel geany-plugin-py geany-plugin-gendoc geany-plugin-scope geany-plugin-geniuspaste geany-plugin-sendmail geany-plugin-git-changebar geany-plugin-shiftcolumn geany-plugin-gproject geany-plugin-spellcheck geany-plugin-insertnum geany-plugin-tableconvert geany-plugin-latex geany-plugin-treebrowser geany-plugin-lineoperations geany-plugin-updatechecker geany-plugin-lipsum geany-plugin-vc geany-plugin-lua geany-plugin-webhelper geany-plugin-macro geany-plugin-xmlsnippets geany-plugin-markdown
+ 1281  apt-get update && apt-get install geany
+ 1282  /home/user/IN301/CM/cm_2/prog1.c
+ 1283  #include <stdlib.h>
+ 1284  make
+ 1285  ./navalmap
+ 1286  arch
+ 1287  cal 2018
+ 1288  cat /proc/cpuinfo
+ 1289  cat /proc/interrupts
+ 1290  cat /proc/meminfo
+ 1291  cat /proc/swaps
+ 1292  cat /proc/version
+ 1293  cat /proc/net/dev
+ 1294  cat /proc/mounts
+ 1295  clock -w
+ 1296  date
+ 1297  dmidecode -q
+ 1298  hdparm -i /dev/hda
+ 1299  hdparm -tT /dev/sda
+ 1300  lspci -tv
+ 1301  lsusb -tv
+ 1302  uname -m
+ 1303  uname -r
+ 1304  init 0
+ 1305  logout
+ 1306  reboot
+ 1307  shutdown -h now
+ 1308  shutdown -h 16:30 &
+ 1309  shutdown -c
+ 1310  shutdown -r now
+ 1311  telinit 0
+ 1312  ls
+ 1313  cd
+ 1314  ls
+ 1315  cd Bureau
+ 1316  cd /home/
+ 1317  cp file1 file2
+ 1318  touch file1
+ 1319  ls
+ 1320  cd TD/
+ 1321  ls
+ 1322  td_3
+ 1323  cd td_3
+ 1324  ls
+ 1325  code EXO11.c
+ 1326  make
+ 1327  code EXO12.c
+ 1328  make
+ 1329  code EXO13.c
+ 1330  code EXO14.c
+ 1331  code EXO15.c
+ 1332  make
+ 1333  man time
+ 1334  make
+ 1335  cd
+ 1336  cd IN301/
+ 1337  git add --all
+ 1338  git commit -a
+ 1339  git push
+ 1340  git status
+ 1341  ls
+ 1342  cd TD
+ 1343  ls
+ 1344  clear
+ 1345  whereis ls
+ 1346  cd Bureau
+ 1347  cd ..
+ 1348  cd.
+ 1349  cd .
+ 1350  cd ..
+ 1351  ls
+ 1352  cd Bureau/
+ 1353  pwd
+ 1354  cd ..
+ 1355  cd IN301/TD
+ 1356  CD
+ 1357  cd
+ 1358  cd IN301/TD/td_0
+ 1359  cd /home/user/Bureau/
+ 1360  ls
+ 1361  cd /home/user/IN301/TD/td_0
+ 1362  ls
+ 1363  man rand
+ 1364  gcc -Wall -c tabint.c
+ 1365  make
+ 1366  git add --all
+ 1367  git commit -a
+ 1368  git push
+ 1369  git add --all
+ 1370  git commit -a
+ 1371  git push
+ 1372  make
+ 1373  cd ..
+ 1374  git add --all
+ 1375  git commit -a
+ 1376  git push
+ 1377  git init
+ 1378  git add --all
+ 1379  git commit -a
+ 1380  git push
+ 1381  ls
+ 1382  cd TD/
+ 1383  ls
+ 1384  cd td_5/
+ 1385  ls
+ 1386  cd IN301_TD5_TRI_INT/
+ 1387  make tri_bulle
+ 1388  .\a.out
+ 1389  make
+ 1390  gcc -Wall -c tri_bulle.c
+ 1391  code liste.c
+ 1392  cd TD/
+ 1393  ls
+ 1394  cd td_5
+ 1395  ls
+ 1396  cd IN301_TD5_TRI_INT/
+ 1397  ls
+ 1398  code tabint.c
+ 1399  code tri_fusion.c
+ 1400  code tri_bulle.h
+ 1401  code makefile
+ 1402  make
+ 1403  make 
+ 1404  make  
+ 1405  make   
+ 1406  make
+ 1407  code liste.c
+ 1408  make
+ 1409  git add --all
+ 1410  git commit -a
+ 1411  git push
+ 1412  git status
+ 1413  vi foo.c
+ 1414  su
+ 1415  gcc -o foo foo.c
+ 1416  clean
+ 1417  clear
+ 1418  gcc -o foo foo.c
+ 1419  clear
+ 1420  gcc -o foo foo.c
+ 1421  clear
+ 1422  gcc -o foo foo.c
+ 1423  apt-get update && apt-get install geany
+ 1424  apt-get install geany-plugin-latex
+ 1425  apt-get install geany-plugin-spellcheck
+ 1426  apt-get install geany-plugin*
+ 1427  apt-get install geany-plugin-addons geany-plugin-numberedbookmarks geany-plugin-codenav geany-plugin-pg geany-plugin-debugger geany-plugin-prettyprinter geany-plugin-doc geany-plugin-prj geany-plugin-extrasel geany-plugin-sendmail geany-plugin-gdb geany-plugin-shiftcolumn geany-plugin-gendoc geany-plugin-spellcheck geany-plugin-gproject geany-plugin-tableconvert geany-plugin-insertnum geany-plugin-treebrowser geany-plugin-latex geany-plugin-updatechecker geany-plugin-lipsum geany-plugin-vc geany-plugin-lua geany-plugin-webhelper geany-plugin-macro geany-plugin-xmlsnippets
+ 1428  geany
+ 1429  makefile code
+ 1430  code makefile
+ 1431  code test.c
+ 1432  code liste.c
+ 1433  code liste.h
+ 1434  code makefile
+ 1435  code test.c
+ 1436  code liste.c
+ 1437  code liste.h
+ 1438  code liste.c
+ 1439  make
+ 1440  ./liste
+ 1441  make
+ 1442  clean
+ 1443  make
+ 1444  make run
+ 1445  make clean
+ 1446  make
+ 1447  clear
+ 1448  make
+ 1449  code main.c
+ 1450  code makefile
+ 1451  apt-get update && apt-get install geany
+ 1452  sudo Lecture des listes de paquets... Fait
+ 1453  W: chmod 0700 of directory /var/lib/apt/lists/partial failed - SetupAPTPartialDirectory (1: Opération non permise)
+ 1454  E: Impossible d'ouvrir le fichier verrou /var/lib/apt/lists/lock - open (13: Permission non accordée)
+ 1455  E: Impossible de verrouiller le répertoire /var/lib/apt/lists/
+ 1456  W: Problème de suppression du lien /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission non accordée)
+ 1457  W: Problème de suppression du lien /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission non accordée)
+ 1458  cd
+ 1459  sudo
+ 1460  sudo apt-get install geany-plugin*
+ 1461  sudo apt-get install geany-plugin-addons geany-plugin-miniscript geany-plugin-autoclose geany-plugin-multiterm geany-plugin-automark geany-plugin-numberedbookmarks geany-plugin-codenav geany-plugin-overview geany-plugin-commander geany-plugin-pairtaghighlighter geany-plugin-ctags geany-plugin-pg geany-plugin-debugger geany-plugin-pohelper geany-plugin-defineformat geany-plugin-prettyprinter geany-plugin-devhelp geany-plugin-prj geany-plugin-doc geany-plugin-projectorganizer geany-plugin-extrasel geany-plugin-py geany-plugin-gendoc geany-plugin-scope geany-plugin-geniuspaste geany-plugin-sendmail geany-plugin-git-changebar geany-plugin-shiftcolumn geany-plugin-gproject geany-plugin-spellcheck geany-plugin-insertnum geany-plugin-tableconvert geany-plugin-latex geany-plugin-treebrowser geany-plugin-lineoperations geany-plugin-updatechecker geany-plugin-lipsum geany-plugin-vc geany-plugin-lua geany-plugin-webhelper geany-plugin-macro geany-plugin-xmlsnippets geany-plugin-markdown
+ 1462  geany
+ 1463  sudo apt-get install geany-plugin*
+ 1464  sudo apt-get install geany-plugin-addons geany-plugin-miniscript geany-plugin-autoclose geany-plugin-multiterm geany-plugin-automark geany-plugin-numberedbookmarks geany-plugin-codenav geany-plugin-overview geany-plugin-commander geany-plugin-pairtaghighlighter geany-plugin-ctags geany-plugin-pg geany-plugin-debugger geany-plugin-pohelper geany-plugin-defineformat geany-plugin-prettyprinter geany-plugin-devhelp geany-plugin-prj geany-plugin-doc geany-plugin-projectorganizer geany-plugin-extrasel geany-plugin-py geany-plugin-gendoc geany-plugin-scope geany-plugin-geniuspaste geany-plugin-sendmail geany-plugin-git-changebar geany-plugin-shiftcolumn geany-plugin-gproject geany-plugin-spellcheck geany-plugin-insertnum geany-plugin-tableconvert geany-plugin-latex geany-plugin-treebrowser geany-plugin-lineoperations geany-plugin-updatechecker geany-plugin-lipsum geany-plugin-vc geany-plugin-lua geany-plugin-webhelper geany-plugin-macro geany-plugin-xmlsnippets geany-plugin-markdown
+ 1465  apt-get update
+ 1466  sudo apt-get update
+ 1467  sudo apt-get install geany
+ 1468  sudo apt-get update
+ 1469  sudo apt-get install -fy && sudo apt-get autoclean && sudo apt-get autoremove --purge -y
+ 1470  cat /etc/apt/sources.list
+ 1471  sudo apt-get install geany
+ 1472  ping ftp.fr.debian.org
+ 1473  git add --all
+ 1474  git commit -a
+ 1475  git push
+ 1476  git status
+ 1477  ls
+ 1478  cd TD
+ 1479  ls
+ 1480  cd td_6
+ 1481  ls
+ 1482  code liste.c
+ 1483  code liste.h
+ 1484  code makefile 
+ 1485  code test
+ 1486  code test.c
+ 1487  gcc -o test test.c
+ 1488  makefile
+ 1489  ./test
+ 1490  gdb test
+ 1491  make clean
+ 1492  make compile
+ 1493  ls
+ 1494  make
+ 1495  ls _lrt
+ 1496  ls -lrt
+ 1497  make clean
+ 1498  make
+ 1499  ls -lrt
+ 1500  make clean
+ 1501  make
+ 1502  ls -lrt
+ 1503  code
+ 1504  make clean
+ 1505  make
+ 1506  ps
+ 1507  cat "liste.c"
+ 1508  cat > liste.c
+ 1509  make run
+ 1510  ls
+ 1511  make
+ 1512  make clean
+ 1513  make
+ 1514  make clean
+ 1515  make
+ 1516  make clean
+ 1517  make
+ 1518  make clean
+ 1519  make
+ 1520  make clean
+ 1521  make
+ 1522  make clean
+ 1523  make
+ 1524  make clean
+ 1525  make
+ 1526  clean
+ 1527  clear
+ 1528  make clean
+ 1529  make
+ 1530  make clean
+ 1531  make
+ 1532  make clean
+ 1533  make
+ 1534  clear
+ 1535  make clean
+ 1536  make
+ 1537  make clean
+ 1538  make
+ 1539  make clean
+ 1540  make
+ 1541  make clean
+ 1542  make
+ 1543  make clean
+ 1544  make
+ 1545  make clean
+ 1546  make
+ 1547  clear
+ 1548  make clean
+ 1549  make
+ 1550  make clean
+ 1551  make
+ 1552  make clean
+ 1553  make
+ 1554  make clean
+ 1555  make
+ 1556  make clean
+ 1557  make
+ 1558  make clean
+ 1559  make
+ 1560  make clean
+ 1561  make
+ 1562  make clean
+ 1563  make
+ 1564  clear
+ 1565  make clean
+ 1566  make
+ 1567  make clean
+ 1568  make
+ 1569  make clean
+ 1570  make
+ 1571  make clean
+ 1572  make
+ 1573  make clean
+ 1574  make
+ 1575  make clean
+ 1576  make
+ 1577  make clean
+ 1578  make
+ 1579  clear
+ 1580  make clean
+ 1581  make
+ 1582  make clean
+ 1583  make
+ 1584  make clean
+ 1585  make
+ 1586  make clean
+ 1587  make
+ 1588  make clean
+ 1589  make
+ 1590  cd
+ 1591  cd IN301/
+ 1592  cd TD
+ 1593  ls
+ 1594  cd td_1
+ 1595  ls
+ 1596  clear
+ 1597  gcc -o debug debug.c
+ 1598  ./debug
+ 1599  gdb ./debug
+ 1600  gcc -o -g debug debug.c
+ 1601  gdb ./debug
+ 1602  gcc -g -o debug debug.c
+ 1603  gdb ./debug
+ 1604  gcc -g -o debug debug.c
+ 1605  gdb ./debug &
+ 1606  gdb ./debug 
+ 1607  gcc -g -o debug debug.c
+ 1608  ./debug &
+ 1609  gcc -o -g debug debug.c
+ 1610  gdb ./debug
+ 1611  gcc -o -g debug debug.c
+ 1612  gdb ./debug
+ 1613  cat debug.c
+ 1614  gcc -Wall -o -g debug debug.c
+ 1615  ls -lart
+ 1616  gcc -Wall -o -g debug debug.c
+ 1617  gdb ./debug
+ 1618  clear
+ 1619  gcc -Wall -o -g debug debug.c
+ 1620  gdb ./debug
+ 1621  clear
+ 1622  cd
+ 1623  ls
+ 1624  cd Bureau/
+ 1625  su
+ 1626  ls
+ 1627  make clean
+ 1628  make
+ 1629  make clean
+ 1630  make
+ 1631  make clean
+ 1632  make
+ 1633  ls
+ 1634  make
+ 1635  make clean
+ 1636  make
+ 1637  gcc -Wall -o -g test test.c
+ 1638  gdb ./test
+ 1639  gcc -Wall -o -g test test.c
+ 1640  gdb ./test
+ 1641  make clean
+ 1642  make
+ 1643  make clean
+ 1644  make
+ 1645  gcc -Wall -o -g test tes
+ 1646  gdb ./test
+ 1647  make clean
+ 1648  make
+ 1649  make clean
+ 1650  make
+ 1651  make clean
+ 1652  make
+ 1653  make clean
+ 1654  make
+ 1655  make clean
+ 1656  make
+ 1657  make clean
+ 1658  make
+ 1659  make clean
+ 1660  make
+ 1661  make clean
+ 1662  make
+ 1663  make clean
+ 1664  make
+ 1665  make clean
+ 1666  make
+ 1667  make clean
+ 1668  make
+ 1669  cd
+ 1670  cd IN301/
+ 1671  cd TD
+ 1672  cd td_1
+ 1673  ls
+ 1674  gcc -Wall -g -o debug debug.c
+ 1675  gdb ./debug
+ 1676  cd ..
+ 1677  cd .
+ 1678  cd ..
+ 1679  git add --all
+ 1680  git commit -a
+ 1681  git push
+ 1682  git status
+ 1683  history > souvegarde_commandes

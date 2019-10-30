@@ -4,13 +4,18 @@
 
 
 void echange (int *a, int *b) {
-    int c;
-    c = *a;
-    *a = *b;
-    *b = c;
+    int *temp;
+    temp = a;
+    a = b;
+    b = temp;
 }
 
 int main( int argc, char** argv){
+    int a=10;
+	int b=20;
+    printf ("%d %d\n", a, b);
+	echange (&a, &b);
+	printf ("%d %d\n", a, b);
 
-
+    return 0;
 }

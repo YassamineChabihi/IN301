@@ -101,7 +101,9 @@ struct liste *supprimer_deb(struct liste *l){
 }
 /*
 
-void supprimer_deb2 (???? l){}
+void supprimer_deb2 (???? l){
+    
+}
 */
 
 
@@ -213,13 +215,12 @@ struct liste *inserer_trie_rec (struct liste *l, int val){
     return l;
 }
 
-/*
+
 struct liste *retourner (struct liste *l){
-    if(!l || l->suiv) return 1;
+    if(!l || l->suiv) return l;
     struct liste *temp = l->suiv;
     struct liste *res = retourner(l->suiv);
     temp->suiv = l;
     l->suiv = NULL;
     return res;
 }
-*/
