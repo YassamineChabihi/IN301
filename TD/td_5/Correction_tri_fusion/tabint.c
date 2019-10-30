@@ -7,6 +7,7 @@
 // #####
 // 1. Génération, suppression et affichage de tableaux
 // #####
+
 TABINT gen_alea_tabint (int N, int K) {
 	TABINT A;
 	A.N = N;

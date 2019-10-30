@@ -1,21 +1,12 @@
 visu: stat.pdf
-	evince stat.pdf & # ?
+	evince stat.pdf &
 
 
-stat.pdf:  stat.gplt test_tri
-	gnuplot stat.gplt # ?
+stat.pdf: tri_bulle stat.gplt test_tri_bulle.data
+	gnuplot stat.gplt
 
-test_tri: tri_fusion tri_bulle
+test_tri_bulle.data: tri_bulle
 	./tri_bulle
-	./tri_fusion
-
-# Le tri fusion
-
-tri_fusion: tri_fusion.o tabint.o
-	gcc -Wall -o tri_fusion tri_fusion.o tabint.o
-
-tri_fusion.o: tri_fusion.c tabint.h stat.h
-	gcc -Wall -c tri_fusion.c
 
 
 # Le tri à bulles
