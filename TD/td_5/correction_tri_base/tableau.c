@@ -22,11 +22,11 @@ Tableau nb_mot_fic(char* fic){
     }
     else{
       if(est_mot){
-	t.n++;
-	if(est_mot > t.taille){
-	  t.taille = est_mot;
-	}
-	est_mot = 0;
+        t.n++;
+        if(est_mot > t.taille){
+          t.taille = est_mot;
+        }
+        est_mot = 0;
       }
     }
   }
@@ -35,7 +35,8 @@ Tableau nb_mot_fic(char* fic){
   return t;
 }
 
-//lit le fichier et retourne le tableau remplit des mots contenu dedans
+/* lit le fichier et retourne le tableau 
+remplit des mots contenu dedans */
 Tableau init_tab_fic(char* fic){
   Tableau t;
   int i = 0;
@@ -71,9 +72,9 @@ Tableau init_tab_fic(char* fic){
     }
     else{
       if(est_mot){
-	est_mot = 0;
-	i = 0;
-	j++;
+        est_mot = 0;
+        i = 0;
+        j++;
       }
     }
   }

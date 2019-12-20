@@ -8,20 +8,24 @@
 // 1. Génération, suppression et affichage de tableaux
 // #####
 
+// 20.b.
 TABINT gen_alea_tabint (int N, int K) {
 	TABINT A;
 	A.N = N;
 	A.T = malloc(sizeof(int)*N);
 	for(int i = 0; i < N; i++){
-		A.T[i] = rand()%(K+1);
+		A.T[i] = rand()%(K+1); // K+1 ?
 	} 
 	return A;
 }
 
+// 20.c.
 void sup_tabint (TABINT A) {
-	free(A.T);
+	free(A.T); // supprime le contenus de A.T et (A.N reste
+
 }
 
+// 20.d.
 void aff_tabint (TABINT A) {
 	printf("Tableau de taille %d: \n",A.N);
 	for(int i = 0; i < A.N; i++){
@@ -34,8 +38,7 @@ void aff_tabint (TABINT A) {
 // 2. Manipulation des valeurs du tableau
 // #####
 
-// Echange la case i et la case i+1 si la case i est > à la case i+1
-
+// 20.e. A-t-on besoin de retourner le tableau pour qu’il soit modifié ?
 void ech_tabint (TABINT A, int i) {
 	comp++;
 	if(i >= A.N - 1) {printf("Position d'échange trop grande)"); exit(1);}
@@ -47,14 +50,17 @@ void ech_tabint (TABINT A, int i) {
 	}
 }
 
-//
+// 20.f. A-t-on besoin de retourner le tableau pour qu’il soit modifié ?
+/* 20.g. Après un appel de cette fonction avec fin 
+ayant comme valeur la taille du tableau, 
+prouvez que la valeur maximum du tableau est à la fin du tableau */
 void scan_ech_tabint (TABINT A, int fin)  {
 	for(int i = 0; i < fin; i++){
 		ech_tabint(A,i);
 	}
 }
 
-
+// 22.a.
 void fusionner (TABINT A, int deb, int mil, int fin){
 	int *temp = malloc(sizeof(int)* (fin -deb));
 	int i = deb;

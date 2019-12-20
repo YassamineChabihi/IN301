@@ -4,11 +4,13 @@
 int comp;
 int ech;
 
+// 21.a. une structure permettant de stocker des stats
 struct stat {
-	int N;
+	int N; // ?
 	double nb_moy_comp;
 	double nb_moy_ech;
 };
+
 
 typedef struct stat * STAT;
 

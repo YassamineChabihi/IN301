@@ -1,9 +1,10 @@
 visu: stat.pdf
 	evince stat.pdf & # ?
-
-
+# 21.d.
+# Utiliser gnuplot Pour afficher les courbes pertinentes et générer un pdf. 
+# Un fichier de commandes gnuplot vous est fourni : stat.gplt. 
 stat.pdf:  stat.gplt test_tri
-	gnuplot stat.gplt # ?
+	gnuplot stat.gplt # Pour lancer gnuplot sur ce fichier de commandes.
 
 test_tri: tri_fusion tri_bulle
 	./tri_bulle
